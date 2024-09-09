@@ -1,9 +1,9 @@
-import mongoose from "mongoose";
-import 'dotenv/config.js';
+import mongoose from 'mongoose'
+import 'dotenv/config.js'
 
 
-mongoose.connect(`${process.env.MONGODB_URL}/${process.env.MONGODB_DB}`)
-.then((value)=>console.log("MongoDB Connected"+ `${process.env.MONGODB_URL}/${process.env.MONGODB_DB}`))
+mongoose.connect(`${process.env.MONGODB_URL}`)
+.then((value)=>console.log("MongoDB Connected"))
 .catch((err)=>console.log(err));
 
 export default mongoose;
